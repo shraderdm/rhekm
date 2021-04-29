@@ -5,4 +5,5 @@ COPY deployments/ROOT.war $CATALINA_HOME/webapps/ROOT
 
 VOLUME ~/piggydb
 
-CMD ["/srv/tomcat7/bin/catalina.sh", "run"]
+EXPOSE 8080
+CMD ["catalina.sh", "run"]
